@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вячеслав Кочуков](https://up.htmlacademy.ru/adaptive/12/user/289641).
-* Наставник: `Неизвестно`.
+* Наставник: ` ¯\_(ツ)_/¯ `.
 
 ---
 
