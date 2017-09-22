@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Интернет магазин "Mishka"</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <!-- =====================  Блок шапка  =================== -->
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
+        <a class="logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg"  alt="Интернет-магазин «Mishka»">
+          </picture>
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper main-nav__wrapper--no-js">
+            <button class="main-nav__toggler" type="button">
+              <svg class="main-nav__toggler--open" width="19.958px" height="14px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-open"></use>
+              </svg>
+              <svg class="main-nav__toggler--close" width="20.514px" height="20.512px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-close">
+                </use>
+              </svg>Открыть меню
+            </button> <!-- бургер -->
+            <ul class="main-nav__primary-list">
+              <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+            </ul>
+            <ul class="main-nav__secondary-list">
+              <li class="main-nav__item"><a class="main-nav__link main__link--lens-icon" href="#">
+                <svg class="main-nav__icon-lens" width="17.6px" height="17.6px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+                </svg>Поиск по сайту
+                </a>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--cart-icon" href="#">
+                <svg class="main-nav__icon-cart" width="20.294px" height="18.849px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart">
+                  </use>
+                </svg>Корзина: пока пуста
+                </a>
+              </li>
+            </ul>
+            <ul class="main-nav__tertiary-list">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Новые поступления</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
+              <li class="main-nav__item"><a class="main-nav__link">Бесплатная доставка по России</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  <!-- =====================  Блок каталог товаров  =================== -->
+    <section class="catalog-page">
+      <header class="catalog-page__header">
+        <h1 class="catalog-page__title">Каталог товаров</h1>
+      </header>
+      <div class="catalog-page__wrapper">
+        <!-- =====================  Блок товара №1  =================== -->
+        <article class="catalog-item">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img class="catalog-item__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Изображение игрушки «зайчик-попрыгайчик»">
+          </picture>
+          <div class="catalog-item__descr-block">
+            <h1 class="catalog-item__title"><a class="catalog-item__link" href="#">Зайчик-попрыгайчик</a></h1>
+            <span class="catalog-item__descr">Рост 30 см, вес 200 г</span>
+            <span class="catalog-item__price">
+              <a class="catalog-item__cart" href="#">
+                <svg class="catalog-item__cart-pic" width="20.294px" height="18.849px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                </svg>Купить
+              </a>1 200 руб.
+            </span>
+          </div>
+        </article>
+        <!-- =====================  Блок товара №2  =================== -->
+        <article class="catalog-item">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img class="catalog-item__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Изображение «Корзинка для белья»">
+          </picture>
+          <div class="catalog-item__descr-block">
+            <h1 class="catalog-item__title"><a class="catalog-item__link" href="#">Корзинка для белья</a></h1>
+            <span class="catalog-item__descr">Диаметр 15 см, высота 10 см</span>
+            <span class="catalog-item__price">
+              <a class="catalog-item__cart catalog-item__cart-2" href="#">
+                <svg class="catalog-item__cart-pic" width="20.294px" height="18.849px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                </svg>Купить
+              </a>690 руб.
+            </span>
+          </div>
+        </article>
+        <!-- =====================  Блок товара №3  =================== -->
+        <article class="catalog-item">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img class="catalog-item__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Изображение «Большая корзинка для игрушек»">
+          </picture>
+          <div class="catalog-item__descr-block">
+            <h1 class="catalog-item__title"><a class="catalog-item__link" href="#">Большая корзинка для игрушек</a></h1>
+            <span class="catalog-item__descr">Диаметр 30 см, высота 30 см</span>
+            <span class="catalog-item__price">
+              <a class="catalog-item__cart catalog-item__cart-3" href="#">
+                <svg class="catalog-item__cart-pic" width="20.294px" height="18.849px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                </svg>Купить
+              </a>1 500 руб.
+            </span>
+          </div>
+        </article>
+        <!-- =====================  Блок описание производства  =================== -->
+        <article class="production-descr catalog-item">
+          <div class="production-descr__header">
+            <h1 class="production-descr__title">
+              <svg class="production-descr__title-pic" width="32px" height="32px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video"></use>
+              </svg>Процесс производства
+            </h1>
+          </div>
+          <!-- =====================  Блок видео  =================== -->
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="production-descr__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео процесса производства">
+          </picture>
+          <a href="#">
+            <svg class="production-descr__video-icon" width="100.678px" height="76.891px">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
+            </svg>
+          </a>
+          <div class="production-descr__inner">
+            <p class="production-descr__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="production-descr__btn btn">Сделать заказ</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  <!-- =====================  Блок контакты  =================== -->
+    <footer class="page-footer">
+      <!-- =====================  Социальные кнопки  =================== -->
+      <div class="page-footer__socials">
+        <div class="page-footer__socials-wrapper">
+          <div class="page-footer__logo">
+            <a class="page-footer__logo-link" href="#">
+              <svg class="page-footer__logo-pic" class="" width="101.615px" height="34.056px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-footer"></use></svg>
+              </a>
+          </div>
+          <div class="socials-links">
+            <div class="socials-links__wrapper">
+              <a class="socials-link" href="#">
+                <svg width="21.769px" height="21.334px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
+                </svg>Мы в инстаграмме
+              </a>
+              <a class="socials-link" href="#">
+                <svg width="14.962px" height="27.718px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
+                </svg>Мы в фейсбуке
+              </a>
+              <a class="socials-link" href="#">
+                <svg width="23.494px" height="20.168px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                </svg>Мы в твиттере
+              </a>
+            </div>
+          </div>
+          <div class="copyrights">
+            <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+              <svg class="copyright-logo" width="26.943px" height="34.09px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
+      <h1 class="modal-content__title">Добавить в корзину</h1>
+      <fieldset class="form-size">
+        <legend class="form-size__title">Выберите размер:</legend>
+        <input class="form-size__feature-value" id="size-s" type="radio" name="size" value="S" checked/>
+        <label class="form-size__feature" for="size-s">S</label>
+        <input class="form-size__feature-value" id="size-m" type="radio" name="size" value="M"/>
+        <label class="form-size__feature" for="size-m">M</label>
+        <input class="form-size__feature-value" id="size-l" type="radio" name="size" value="L"/>
+        <label class="form-size__feature" for="size-l">L</label>
+      </fieldset>
+      <button class="modal-content__btn btn" type="submit">Добавить</button>
+    </form>
+    <div class="modal-overlay"></div>
+    <script src="js/open-modal.js"></script>
+    <script src="js/open-menu.js"></script>
+  </body>
+</html>

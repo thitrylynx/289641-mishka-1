@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Интернет магазин "Mishka"</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <!-- =====================  Блок шапка  =================== -->
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <h1 class="page-header__title">Интернет-магазин "Mishka" - Главная страница</h1><!-- скрыть -->
+        <a class="logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg"  alt="Интернет-магазин «Mishka»">
+          </picture>
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper main-nav__wrapper--no-js">
+            <button class="main-nav__toggler" type="button">
+              <svg class="main-nav__toggler--open" width="19.958px" height="14px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-open"></use>
+              </svg>
+              <svg class="main-nav__toggler--close" width="20.514px" height="20.512px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-close">
+                </use>
+              </svg>Открыть меню
+            </button> <!-- бургер -->
+            <ul class="main-nav__primary-list">
+              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link">Вязание на заказ</a></li>
+            </ul>
+            <ul class="main-nav__secondary-list">
+              <li class="main-nav__item"><a class="main-nav__link main__link--lens-icon" href="#">
+                <svg class="main-nav__icon-lens" width="17.6px" height="17.6px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+                </svg>Поиск по сайту
+                </a>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link main-nav__link--cart-icon" href="#">
+                <svg class="main-nav__icon-cart" width="20.294px" height="18.849px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart">
+                  </use>
+                </svg>Корзина: пока пуста
+                </a>
+              </li>
+            </ul>
+            <ul class="main-nav__tertiary-list">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Новые поступления</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
+              <li class="main-nav__item"><a class="main-nav__link">Бесплатная доставка по России</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  <!-- =====================  Блок форма  =================== -->
+    <section class="page-form">
+      <header class="page-form__header">
+        <h1 class="page-form__title">Вязание на заказ</h1>
+      </header>
+        <!-- Форма -->
+        <form class="form-block" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-block__wrapper">
+            <div class="form-block__inner">
+              <p class="form-block__title">Мы будем рады воплотить в жизнь выши пожелания! Запоните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+              <!-- Форма (тип) -->
+              <fieldset class="form-type">
+                <legend class="form-type__title">Тип</legend>
+                <input class="form-type__feature-value" id="radio-type-1" type="radio" name="type" value="accessory" checked/>
+                <label class="form-type__feature" for="radio-type-1">Аксессуар для интерьера</label>
+                <input class="form-type__feature-value" id="radio-type-2" type="radio" name="type" value="toy"/>
+                <label class="form-type__feature" for="radio-type-2">Детская игрушка</label>
+              </fieldset>
+            </div>
+          </div>
+          <!-- =====================  Форма (цвет)  =================== -->
+          <div class="form-block__wrapper">
+            <div class="form-block__inner">
+              <fieldset class="form-color">
+                <legend class="form-color__title">Цвет</legend>
+                <input class="form-color__feature-value" id="checkbox-1" type="checkbox" name="color" value="white" checked>
+                <label class="form-color__feature" for="checkbox-1">Белый</label>
+                <input class="form-color__feature-value" id="checkbox-2" type="checkbox" name="color" value="gray" checked>
+                <label class="form-color__feature" for="checkbox-2">Серый</label>
+                <input class="form-color__feature-value" id="checkbox-3" type="checkbox" name="color" value="tiffany">
+                <label class="form-color__feature" for="checkbox-3">«Тиффани»</label>
+                <input class="form-color__feature-value" id="checkbox-4" type="checkbox" name="color" value="black">
+                <label class="form-color__feature" for="checkbox-4">Черный</label>
+                <input class="form-color__feature-value" id="checkbox-5" type="checkbox" name="color" value="pink">
+                <label class="form-color__feature" for="checkbox-5">Розовый</label>
+                <input class="form-color__feature-value" id="checkbox-6" type="checkbox" name="color" value="orange">
+                <label class="form-color__feature" for="checkbox-6">Оранжевый</label>
+              </fieldset>
+            </div>
+          </div>
+          <!-- =====================  Форма (ФИО)  =================== -->
+          <div class="form-block__wrapper">
+            <div class="form-block__inner">
+              <fieldset class="form-name">
+                <legend class="form-name__title">ФИО</legend>
+                <label class="form-name__text">Имя:<input class="form-name__text-value" type="text" placeholder="Введите ваше имя*" name="name"></label>
+                <label class="form-name__text">Фамилия:<input class="form-name__text-value" type="text" placeholder="Укажите фамилию*" name="second-name"></label>
+                <label class="form-name__text">Отчество:<input class="form-name__text-value" type="text" placeholder="Отчество, если желаете" name="patronymic"></label>
+              </fieldset>
+            </div>
+          </div>
+          <!-- =====================  Форма (ТЕЛ)  =================== -->
+          <div class="form-block__wrapper">
+            <div class="form-block__inner">
+              <fieldset class="form-tel">
+                <legend class="form-tel__title">Тел</legend>
+                <label class="form-tel__text">
+                  <svg class="form-tel__text-icon" width="24.829px" height="24.333px">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use>
+                  </svg>
+                  <input class="form-tel__text-value" type="text" placeholder="+7 XXX XX XX*" name="tel">
+                </label>
+              </fieldset>
+              <!-- Форма (E-MAIL) -->
+              <fieldset class="form-mail">
+                <legend class="form-mail__title">E-mail</legend>
+                <label class="form-mail__text">
+                  <svg class="form-mail__text-icon" width="32px" height="32px">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+                  </svg><input class="form-mail__text-value" type="text" placeholder="Ваш Email*" name="mail">
+                </label>
+              </fieldset>
+            </div>
+          </div>
+          <!-- =====================  Форма (Дополнительно)  =================== -->
+          <div class="form-block__wrapper">
+            <div class="form-block__inner">
+              <fieldset class="form-more">
+                <legend class="form-more__title">Доп</legend>
+                <textarea class="form-more__text" rows="3" cols="20" name="more" placeholder="Опишите все выши пожелания к заказу"></textarea>
+              </fieldset>
+            </div>
+          </div>
+          <div class="form-block__inner">
+            <span class="form-block__note"><sup>*</sup>Поля обязательные для заполнения</span>
+            <button class="form-block__btn btn" type="submit">Отправить заказ</button>
+          </div>
+      </form>
+    </section>
+  <!-- =====================  Блок контакты  =================== -->
+    <footer class="page-footer">
+      <!-- =====================  Социальные кнопки  =================== -->
+      <div class="page-footer__socials">
+        <div class="page-footer__socials-wrapper">
+          <div class="page-footer__logo">
+            <a class="page-footer__logo-link" href="#">
+              <svg class="page-footer__logo-pic" class="" width="101.615px" height="34.056px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-footer"></use></svg>
+              </a>
+          </div>
+          <div class="socials-links">
+            <div class="socials-links__wrapper">
+              <a class="socials-link" href="#">
+                <svg width="21.769px" height="21.334px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
+                </svg>Мы в инстаграмме
+              </a>
+              <a class="socials-link" href="#">
+                <svg width="14.962px" height="27.718px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
+                </svg>Мы в фейсбуке
+              </a>
+              <a class="socials-link" href="#">
+                <svg width="23.494px" height="20.168px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                </svg>Мы в твиттере
+              </a>
+            </div>
+          </div>
+          <div class="copyrights">
+            <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+              <svg class="copyright-logo" width="26.943px" height="34.09px">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <script src="js/open-menu.js"></script>
+    </footer>
+  </body>
+</html>
