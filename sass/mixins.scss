@@ -33,12 +33,6 @@
   color: black;
 }
 
-@mixin btext {
-  font-family: $bfont;
-  font-size: 17px;
-}
-
 @mixin align {
   text-align: center;
 }
-
