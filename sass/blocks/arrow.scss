@@ -1,42 +1,51 @@
 .arrow {
   width: 260px;
-  .zero;
+
+  @include zero;
   margin-top: 37px;
   margin-left: 30px;
   font-size: 0;
 }
+
 .arrow__block {
   width: 130px;
   height: 50px;
-  .zero;
-  border: 1px solid @border-color;
+
+  @include zero;
+  border: 1px solid $border-color;
   background-color: #ffffff;
   cursor: pointer;
 }
+
 .arrow__block:hover {
   opacity: 0.5;
 }
+
 .arrow__block:active {
   opacity: 0.2;
 }
-@media @tablet-widths {
+
+@media (min-width: $tablet-widths) {
   .arrow {
     display: flex;
     width: 180px;
     justify-content: space-around;
-    .zero;
+
+    @include zero;
     margin-top: -48px;
     margin-left: auto;
     margin-right: 45px;
   }
+
   .arrow__block {
     width: 60px;
     border: none;
   }
 }
-@media @desktop-widths {
+
+@media (min-width: $desktop-widths) {
   .arrow {
     width: 160px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
