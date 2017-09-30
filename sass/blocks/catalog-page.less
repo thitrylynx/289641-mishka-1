@@ -1,0 +1,66 @@
+.catalog-page__header {
+  height: 170px;
+  background-color: #f1f1f1;
+  border-top: 1px solid @border-color;
+}
+.catalog-page__title {
+  .zero;
+  padding-top: 70px;
+  font-weight: 700;
+  font-size: 27px;
+  .align;
+}
+.catalog-page__wrapper {
+  width: 320px;
+  .margins;
+  padding-bottom: 60px; /* временная высота */
+}
+@media @tablet-widths {
+  .catalog-page__header {
+    height: 225px;
+    margin-top: -60px;
+    z-index: -1;
+    &:after {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 60px;
+      margin-top: 30px;
+      background-image: url(../img/bg-zigzag-fill.svg);
+      background-size: auto 20px;
+      background-position: bottom;
+      background-repeat: repeat-x;
+    }
+  }
+  .catalog-page__title {
+    padding-top: 95px;
+    font-size: 43px;
+  }
+  .catalog-page__wrapper {
+    padding-bottom: 60px; /* временная высота */
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    align-items: stretch;
+    width: 768px;
+  }
+}
+@media @desktop-widths {
+  .catalog-page__header {
+    height: 230px;
+    margin-top: -55px;
+    &:after {
+      margin-top: 50px;
+      background-size: auto 30px;
+    }
+  }
+  .catalog-page__title {
+    padding-top: 80px;
+    font-size: 48px;
+  }
+  .catalog-page__wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1150px;
+  }
+}

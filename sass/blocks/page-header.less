@@ -1,0 +1,28 @@
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  .margins;
+  border-bottom: 1px solid @border-color;
+}
+.page-header__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@media @tablet-widths {
+  .page-header__wrapper {
+    width: 768px;
+    border: none;
+  }
+}
+@media @desktop-widths {
+  .page-header__wrapper {
+    width: 1150px;
+  }
+}

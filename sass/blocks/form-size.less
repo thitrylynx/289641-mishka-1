@@ -1,0 +1,38 @@
+.form-size {
+  margin-top: 30px;
+  font-size: 0;
+  border: none;
+}
+.form-size__title {
+  font-size: 15px;
+}
+.form-size__feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 17px;
+  border: 1px solid @border-color;
+}
+.form-size__feature:nth-of-type(2) {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.form-size__feature-value {
+  display: none;
+}
+.form-size__feature:hover {
+  border: 2px solid #c7c7c7;
+}
+.form-size__feature-value:checked + .form-size__feature {
+  border: 2px solid @primary-color;
+}
+@media @tablet-widths {
+  .form-size__feature {
+    width: 110px;
+  }
+}
