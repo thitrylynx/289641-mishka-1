@@ -1,16 +1,18 @@
 .form-block__inner {
-    width: 320px;
-    margin: 0 auto;
-  }
+  width: 320px;
+  margin: 0 auto;
+}
+
 .form-block__title {
-  .zero;
+  @include zero;
   padding-top: 20px;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 13px;
   line-height: 24px;
-  color: @text-color;
+  color: $text-color;
 }
+
 .form-block__note {
   display: block;
   margin-top: 18px;
@@ -18,6 +20,7 @@
   margin-right: 30px;
   font-size: 14px;
 }
+
 .form-block__btn {
   display: block;
   width: 260px;
@@ -27,17 +30,21 @@
   background-color: transparent;
   cursor: pointer;
 }
-@media @tablet-widths {
+
+@media (min-width: $tablet-widths) {
   .form-block {
     display: flex;
     flex-direction: column;
   }
+
   .form-block__wrapper:nth-child(even) {
     background-color: #f1f1f1;
   }
+
   .form-block__inner {
     width: 768px;
   }
+
   .form-block__title {
     padding-top: 70px;
     padding-left: 50px;
@@ -45,6 +52,7 @@
     font-size: 17px;
     line-height: 30px;
   }
+
   .form-block__note {
     width: 330px;
     margin-top: 65px;
@@ -52,6 +60,7 @@
     font-weight: normal;
     font-size: 16px;
   }
+
   .form-block__btn {
     width: 230px;
     margin-top: -30px;
@@ -59,22 +68,26 @@
     margin-bottom: 50px;
   }
 }
-@media @desktop-widths {
+
+@media (min-width: $desktop-widths) {
   .form-block__inner {
     width: 1150px;
   }
-  .form-block__title  {
+
+  .form-block__title {
     padding-top: 110px;
     padding-left: 253px;
     padding-right: 230px;
     font-size: 16px;
   }
+
   .form-block__note {
     width: 300px;
     margin-top: 60px;
     margin-left: 625px;
     font-size: 14px;
   }
+
   .form-block__btn {
     width: 210px;
     margin-left: 255px;

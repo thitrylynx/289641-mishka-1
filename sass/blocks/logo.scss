@@ -5,13 +5,16 @@
   margin-top: 22px;
   margin-bottom: 22px;
 }
+
 .logo[href]:hover {
   opacity: 0.6;
 }
+
 .logo[href]:active {
   opacity: 0.2;
 }
-@media @tablet-widths {
+
+@media (min-width: $tablet-widths) {
   .logo {
     align-self: flex-start;
     position: absolute;
@@ -20,7 +23,8 @@
     margin-left: 50px;
   }
 }
-@media @desktop-widths {
+
+@media (min-width: $desktop-widths) {
   .logo {
     width: 148px;
     height: 72px;

@@ -4,20 +4,22 @@
   font-size: 0;
   background-color: transparent;
 }
+
 .socials-links__wrapper {
   display: flex;
   align-items: baseline;
-  .margins;
+
+  @include margins;
 }
-@media @tablet-widths {
+
+@media (min-width: $tablet-widths) {
   .socials-links {
     margin-left: 110px;
     margin-right: auto;
   }
-  .socials-links__wrapper {
-  }
 }
-@media @desktop-widths {
+
+@media (min-width: $desktop-widths) {
   .socials-links {
     margin-left: 265px;
   }

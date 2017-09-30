@@ -3,9 +3,10 @@
   min-height: 335px;
   text-align: center;
   background-color: #ffffff;
-  border: 1px solid @border-color;
-  box-shadow: 0px 5px 10px 0px #cdcdcd;
+  border: 1px solid $border-color;
+  box-shadow: 0 5px 10px 0 #cdcdcd;
 }
+
 .modal-content__title {
   width: 160px;
   margin: 0 auto;
@@ -15,18 +16,21 @@
   line-height: 31px;
   text-transform: uppercase;
 }
+
 .modal-content__btn {
-  .margins;
+  @include margins;
   width: 260px;
   margin-bottom: 45px;
   color: #ffffff;
-  background-color: @primary-color;
+  background-color: $primary-color;
   border: none;
   cursor: pointer;
 }
+
 .modal-content--hidden {
   display: none;
 }
+
 .modal-content--show {
   position: fixed;
   z-index: 11;
@@ -35,14 +39,17 @@
   transform: translate(-50%, -50%);
   display: block;
 }
-@media @tablet-widths {
+
+@media (min-width: $tablet-widths) {
   .modal-content {
     width: 570px;
   }
+
   .modal-content__title {
     width: auto;
     padding-top: 45px;
   }
+
   .modal-content__btn {
     width: 350px;
   }

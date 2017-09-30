@@ -1,19 +1,21 @@
 .form-color {
-  .zero;
+  @include zero;
   margin-top: 40px;
   margin-left: 30px;
   margin-right: 30px;
   border: none;
-  border-top: 1px solid @primary-color;
+  border-top: 1px solid $primary-color;
 }
+
 .form-color__title {
-  .zero;
+  @include zero;
   padding-right: 25px;
   font-weight: 700;
   font-size: 17px;
   text-transform: uppercase;
-  color: @primary-color;
+  color: $primary-color;
 }
+
 .form-color__feature {
   display: block;
   margin-top: 4px;
@@ -23,13 +25,8 @@
   font-weight: 700;
   font-size: 17px;
   cursor: pointer;
-}
-.form-color__feature-value {
-  position: absolute;
-  opacity: 0;
-}
-.form-color__feature {
-  &:before {
+
+  &::before {
     content: " ";
     position: absolute;
     width: 32px;
@@ -40,9 +37,16 @@
     cursor: pointer;
   }
 }
+
+.form-color__feature-value {
+  position: absolute;
+  opacity: 0;
+}
+
 .form-color__feature-value:checked + .form-color__feature {
   position: relative;
-  &:after {
+
+  &::after {
     content: " ";
     position: absolute;
     top: 32px;
@@ -50,22 +54,25 @@
     width: 30px;
     height: 30px;
     border-radius: 10px;
-    background-image: url(../img/icon-tick.svg);
+    background-image: url("/img/icon-tick.svg");
     background-size: 23px auto;
     background-repeat: no-repeat;
   }
 }
-@media @tablet-widths {
+
+@media (min-width: $tablet-widths) {
   .form-color {
     margin-top: 65px;
     padding-left: 190px;
     padding-bottom: 50px;
     border: none;
   }
+
   .form-color__title {
     margin-left: -166px;
     margin-bottom: -55px;
   }
+
   .form-color__feature {
     display: inline-block;
     width: 180px;
@@ -73,9 +80,8 @@
     padding-bottom: 20px;
     align-content: center;
     font-size: 19px;
-  }
-  .form-color__feature {
-    &:before {
+
+    &::before {
       width: 48px;
       height: 48px;
       margin-top: -13px;
@@ -83,27 +89,30 @@
     }
   }
 
-  .form-color__feature-value:checked+.form-color__feature {
+  .form-color__feature-value:checked + .form-color__feature {
     position: relative;
-    &:after {
+
+    &::after {
       background-size: 35px auto;
     }
   }
 }
-@media @desktop-widths {
+
+@media (min-width: $desktop-widths) {
   .form-color {
     padding-left: 225px;
   }
+
   .form-color__title {
     margin-left: -110px;
   }
+
   .form-color__feature {
     width: 160px;
     padding-bottom: 15px;
     font-size: 17px;
-  }
-  .form-color__feature {
-    &:before {
+
+    &::before {
       margin-top: -13px;
     }
   }
