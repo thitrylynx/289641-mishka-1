@@ -1,3 +1,32 @@
-body {
-  background-color: red;
-}
+@import "../css/normalize.css";
+@import "variables.scss";
+@import "mixins.scss";
+@import "global/scaffolding.scss";
+@import "global/fonts.scss";
+@import "blocks/logo.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-content.scss";
+@import "blocks/promo-block.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/arrow.scss";
+@import "blocks/btn.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/socials-links.scss";
+@import "blocks/socials-link.scss";
+@import "blocks/copyrights.scss";
+@import "blocks/modal-content.scss";
+@import "blocks/form-size.scss";
+@import "blocks/modal-overlay.scss";
+@import "blocks/catalog-page.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/production-descr.scss";
+@import "blocks/page-form.scss";
+@import "blocks/form-block.scss";
+@import "blocks/form-type.scss";
+@import "blocks/form-color.scss";
+@import "blocks/form-name.scss";
+@import "blocks/form-tel.scss";
+@import "blocks/form-mail.scss";
+@import "blocks/form-more.scss";

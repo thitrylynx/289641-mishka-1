@@ -1,0 +1,116 @@
+.about__wrapper {
+  width: 320px;
+
+  @include margins;
+}
+
+.about__title {
+  @include zero;
+  padding: 0 30px;
+  padding-top: 25px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.about__advantages {
+  @include zero;
+  margin-top: 29px;
+  padding: 0 30px;
+  list-style: none;
+  font-size: 17px;
+}
+
+.about__advantage {
+  padding-top: 55px;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+.about__advantage-flower,
+.about__advantage-circle,
+.about__advantage-money,
+.about__advantage-rocket,
+.about__advantage-heart,
+.about__advantage-present {
+  position: absolute;
+  margin-top: -54px;
+  margin-left: 3px;
+}
+
+@media (min-width: $tablet-widths) {
+  .about__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+  }
+
+  .about__title {
+    flex-basis: 100px;
+    padding-top: 55px;
+    padding-left: 45px;
+    font-size: 43px;
+  }
+
+  .about__advantages {
+    display: flex;
+    height: 470px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include zero;
+  }
+
+  .about__advantage {
+    flex-basis: 55px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    font-size: 20px;
+  }
+
+  .about__advantage:nth-child(4),
+  .about__advantage:nth-child(5),
+  .about__advantage:nth-child(6) {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .about__wrapper {
+    width: 1150px;
+    align-items: stretch;
+  }
+
+  .about__title {
+    padding-top: 55px;
+    padding-left: 250px;
+    font-size: 48px;
+  }
+
+  .about__advantages {
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 760px;
+    height: 430px;
+    margin-left: 180px;
+  }
+
+  .about__advantage {
+    flex-basis: 80px;
+    padding-left: 75px;
+    padding-bottom: 12px;
+    font-size: 18px;
+  }
+
+  .about__advantage-flower,
+  .about__advantage-circle,
+  .about__advantage-money,
+  .about__advantage-rocket,
+  .about__advantage-heart,
+  .about__advantage-present {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 0;
+  }
+}

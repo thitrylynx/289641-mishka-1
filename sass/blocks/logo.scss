@@ -1,0 +1,34 @@
+.logo {
+  align-self: center;
+  width: 86px;
+  height: 35px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.logo[href]:hover {
+  opacity: 0.6;
+}
+
+.logo[href]:active {
+  opacity: 0.2;
+}
+
+@media (min-width: $tablet-widths) {
+  .logo {
+    align-self: flex-start;
+    position: absolute;
+    width: 112px;
+    height: 46px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .logo {
+    width: 148px;
+    height: 72px;
+    margin-top: 5px;
+    margin-left: 500px;
+  }
+}

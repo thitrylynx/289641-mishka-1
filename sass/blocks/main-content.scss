@@ -1,0 +1,240 @@
+.main-content {
+  background-color: #f9f9f9;
+}
+
+.main-content__wrap {
+  width: 320px;
+  min-height: 300px;
+
+  @include margins;
+  text-align: center;
+  background-image: url("/img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 575px auto;
+  background-position: top;
+}
+
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .main-content__wrap {
+    background-image: url("/img/hero-mobile@2x.jpg");
+  }
+}
+
+.main-content__header { /* Для картинки */
+  @include margins;
+}
+
+.main-content__title {
+  @include zero;
+  padding-top: 85px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include align;
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.main-content__list {
+  @include zero;
+  list-style: none;
+}
+
+.main-content__list-wrapper {
+  width: 320px;
+
+  @include margins;
+}
+
+.main-content__list-link {
+  display: block;
+  padding-top: 25px;
+  padding-left: 29px;
+  padding-bottom: 29px;
+
+  @include type-link;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.main-content__list-link:active {
+  &::before {
+    opacity: 0.1;
+  }
+  color: #8be2d0;
+}
+
+.main-content__list-item--light {
+  background-color: $primary-color;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: -4px;
+    margin-left: 213px;
+    background-image: url("/img/icon-interior.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+}
+
+.main-content__list-item--dark {
+  background-color: $secondary-color;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: -6px;
+    margin-left: 204px;
+    background-image: url("/img/icon-toy.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .main-content {
+    background-color: #f9f9f9;
+    margin-top: -60px;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 60px;
+      margin-top: -50px;
+      background-image: url("/img/bg-zigzag-fill.svg");
+      background-size: auto 24px;
+      background-position: bottom;
+      background-repeat: repeat-x;
+    }
+  }
+
+  .main-content__wrap {
+    width: 768px;
+    background-image: url("/img/hero-desktop@1x.jpg");
+    background-size: 1150px auto;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .main-content__wrap {
+      background-image: url("/img/hero-desktop@2x.jpg");
+    }
+  }
+
+  .main-content__header {
+    min-height: 630px;
+  }
+
+  .main-content__title {
+    padding-top: 155px;
+    font-size: 43px;
+  }
+
+  .main-content__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-content__list-wrapper {
+    width: 335px;
+  }
+
+  .main-content__list-link {
+    height: 60px;
+    padding-top: 27px;
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .main-content__list-link:hover {
+    height: 65px;
+    margin-top: -5px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+  }
+
+  .main-content__list-item--light {
+    &::before {
+      margin-top: 0;
+      margin-left: 224px;
+    }
+  }
+
+  .main-content__list-item--dark {
+    &::before {
+      margin-top: 0;
+      margin-left: 205px;
+    }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .main-content {
+    margin-top: -55px;
+
+    &::after {
+      margin-top: -40px;
+      background-size: auto 35px;
+    }
+  }
+
+  .main-content__wrap {
+    width: 1150px;
+    background-position: center -25px;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .main-content__wrap {
+      background-image: url("/img/hero-desktop@2x.jpg");
+    }
+  }
+
+  .main-content__header {
+    min-height: 580px;
+  }
+
+  .main-content__title {
+    padding-top: 140px;
+    font-size: 49px;
+  }
+
+  .main-content__list-wrapper {
+    width: 485px;
+  }
+
+  .main-content__list-link {
+    height: 55px;
+    padding-bottom: 25px;
+    font-size: 18px;
+  }
+
+  .main-content__list-link:hover {
+    height: 65px;
+    margin-top: -5px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
+
+  .main-content__list-item--light {
+    &::before {
+      margin-left: 380px;
+    }
+  }
+
+  .main-content__list-item--dark {
+    &::before {
+      margin-left: 361px;
+    }
+  }
+}
