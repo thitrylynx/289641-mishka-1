@@ -123,7 +123,7 @@
       </div>
     </header>
   <!-- =====================  Блок каталог товаров  =================== -->
-    <section class="catalog-page">
+    <section class="catalog-page" id="catalogg">
       <header class="catalog-page__header">
         <h1 class="catalog-page__title">Каталог товаров</h1>
       </header>
@@ -139,7 +139,7 @@
             <h1 class="catalog-item__title"><a class="catalog-item__link" href="#">Зайчик-попрыгайчик</a></h1>
             <span class="catalog-item__descr">Рост 30 см, вес 200 г</span>
             <span class="catalog-item__price">
-              <a class="catalog-item__cart" href="#">
+              <a class="catalog-item__cart" href="#">Зайчик-попрыгайчик
                 <svg class="catalog-item__cart-pic" width="20.294px" height="18.849px">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>Купить
@@ -158,7 +158,7 @@
             <h1 class="catalog-item__title"><a class="catalog-item__link" href="#">Корзинка для белья</a></h1>
             <span class="catalog-item__descr">Диаметр 15 см, высота 10 см</span>
             <span class="catalog-item__price">
-              <a class="catalog-item__cart catalog-item__cart-2" href="#">
+              <a class="catalog-item__cart catalog-item__cart-2" href="#">Корзинка для белья
                 <svg class="catalog-item__cart-pic" width="20.294px" height="18.849px">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>Купить
@@ -177,7 +177,7 @@
             <h1 class="catalog-item__title"><a class="catalog-item__link" href="#">Большая корзинка для игрушек</a></h1>
             <span class="catalog-item__descr">Диаметр 30 см, высота 30 см</span>
             <span class="catalog-item__price">
-              <a class="catalog-item__cart catalog-item__cart-3" href="#">
+              <a class="catalog-item__cart catalog-item__cart-3" href="#">Большая корзинка для игрушек
                 <svg class="catalog-item__cart-pic" width="20.294px" height="18.849px">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>Купить
@@ -255,6 +255,7 @@
       <h1 class="modal-content__title">Добавить в корзину</h1>
       <fieldset class="form-size">
         <legend class="form-size__title">Выберите размер:</legend>
+        <input id="names" name="name" value=""/>
         <input class="form-size__feature-value" id="size-s" type="radio" name="size" value="S" checked/>
         <label class="form-size__feature" for="size-s">S</label>
         <input class="form-size__feature-value" id="size-m" type="radio" name="size" value="M"/>
@@ -265,7 +266,7 @@
       <button class="modal-content__btn btn" type="submit">Добавить</button>
     </form>
     <div class="modal-overlay"></div>
-    <script src="js/open-modal.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/offer.js"></script>
   </body>
 </html>
