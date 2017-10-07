@@ -56,7 +56,7 @@
     height: 35px;
     margin-top: -13px;
     margin-left: -27px;
-    background-image: url("/img/icon-left-arrow.svg");
+    background-image: url("../img/icon-left-arrow.svg");
     background-repeat: no-repeat;
   }
 }
@@ -69,7 +69,7 @@
     height: 35px;
     margin-top: -13px;
     margin-left: -26px;
-    background-image: url("/img/icon-right-arrow.svg");
+    background-image: url("../img/icon-right-arrow.svg");
     background-repeat: no-repeat;
   }
 }
@@ -83,7 +83,7 @@
     margin-top: 15px;
     padding-bottom: 130px;
     /* временная высота */
-    background-image: url("/img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px auto;
     background-position: top left;
@@ -92,7 +92,7 @@
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
     .reviews__wrapper {
-      background-image: url("/img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
     }
   }
 
