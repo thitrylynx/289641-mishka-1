@@ -4,6 +4,7 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
+var posthtml = require("gulp-posthtml");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
@@ -34,6 +35,12 @@ gulp.task("images", function () {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("img"));
+});
+
+gulp.task("html", function () {
+  return gulp.src("*.html")
+    .pipe(posthtml())
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("serve", function() {
@@ -69,6 +76,7 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "style",
+    "html",
     done
   );
 });
