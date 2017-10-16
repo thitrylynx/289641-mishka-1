@@ -10,7 +10,7 @@
 
 .page-footer__title {
   @include zero;
-  padding: 0 30px;
+  padding: 0 32px;
   padding-top: 40px;
   font-weight: 700;
   font-size: 18px;
@@ -18,7 +18,7 @@
 
 .page-footer__mail {
   @include zero;
-  margin-top: 35px;
+  margin-top: 38px;
   padding: 0 30px;
   color: $text-color;
 }
@@ -45,7 +45,7 @@
 
   @include zero;
   margin-top: 36px;
-  padding-left: 30px;
+  padding-left: 34px;
   padding-right: 60px;
   line-height: 30px;
   color: $text-color;
@@ -56,7 +56,7 @@
 }
 
 .page-footer__map-block {
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .page-footer__map {
@@ -70,7 +70,7 @@
 }
 
 .page-footer__btn {
-  margin: 0 30px;
+  margin: 0 32px;
   margin-top: 35px;
   margin-bottom: 40px;
 }
@@ -125,7 +125,7 @@
     width: 300px;
 
     @include zero;
-    padding-top: 53px;
+    padding-top: 56px;
     padding-left: 50px;
     font-size: 17px;
   }
@@ -140,8 +140,8 @@
     width: 300px;
 
     @include zero;
-    padding-top: 48px;
-    padding-left: 32px;
+    padding-top: 52px;
+    padding-left: 34px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -165,7 +165,7 @@
 
   .page-footer__btn {
     width: 230px;
-    margin-top: 55px;
+    margin-top: 53px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 35px;

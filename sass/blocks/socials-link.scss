@@ -1,7 +1,7 @@
 .socials-link {
   width: 22px;
   height: 30px;
-  margin-top: 26px;
+  margin-top: 23px;
 }
 
 .socials-link:nth-child(1),
@@ -15,6 +15,12 @@
 
 .socials-link:active {
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-widths) {
+  .socials-link {
+    margin-top: 24px;
+  }
 }
 
 @media (min-width: $desktop-widths) {
