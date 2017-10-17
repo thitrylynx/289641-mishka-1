@@ -82,7 +82,6 @@
     width: 768px;
     margin-top: 15px;
     padding-bottom: 130px;
-    /* временная высота */
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px auto;
@@ -140,53 +139,54 @@
 @media (min-width: $desktop-widths) {
   .reviews__wrapper {
     flex-direction: column;
-    width: 970px;
-    min-height: 390px; /* временная высота */
-    margin-top: 30px;
+    width: 1050px;
+    min-height: 430px; /* временная высота */
+    margin-top: 15px;
+    margin-left: 85px;
     padding-bottom: 90px;
     background-position: top left;
-    background-size: 320px auto;
+    background-size: 350px auto;
   }
 
   .reviews__title {
     align-self: flex-start;
-    padding-top: 60px;
-    padding-left: 165px;
-    font-size: 48px;
+    padding-top: 65px;
+    padding-left: 175px;
+    font-size: 52px;
   }
 
   .reviews__slider {
     align-self: flex-start;
-    margin-top: 40px;
+    margin-top: 38px;
   }
 
   .reviews__item-text {
     @include zero;
-    margin-left: 165px;
-    margin-right: 80px;
-    padding-top: 0;
-    font-size: 16px;
+    margin-left: 175px;
+    margin-right: 15px;
+    padding-top: 8px;
+    font-size: 17px;
     line-height: 29px;
   }
 
   .reviews__author-name {
-    margin-top: 35px;
-    margin-left: 165px;
+    margin-top: 43px;
+    margin-left: 178px;
     padding: 0;
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .reviews__author-inst {
-    margin-top: 10px;
-    margin-left: 165px;
+    margin-top: 12px;
+    margin-left: 178px;
     padding: 0;
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .reviews__link {
-    width: 160px;
+    width: 170px;
     align-self: baseline;
-    margin-top: -50px;
-    margin-right: 0;
+    margin-top: -48px;
+    margin-left: 878px;
   }
 }

@@ -83,24 +83,25 @@
   }
 
   .about__title {
-    padding-top: 55px;
-    padding-left: 250px;
-    font-size: 48px;
+    padding-top: 65px;
+    padding-left: 220px;
+    font-size: 52px;
   }
 
   .about__advantages {
     justify-content: flex-start;
     align-items: stretch;
-    width: 760px;
-    height: 430px;
-    margin-left: 180px;
+    width: 820px;
+    min-height: 480px;
+    margin-top: 15px;
+    margin-left: 150px;
   }
 
   .about__advantage {
-    flex-basis: 80px;
+    flex-basis: 90px;
     padding-left: 75px;
     padding-bottom: 12px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .about__advantage-flower,
