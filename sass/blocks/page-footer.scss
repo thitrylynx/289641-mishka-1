@@ -200,21 +200,21 @@
 
 @media (min-width: $desktop-widths) {
   .page-footer__wrapper {
-    width: 970px;
+    width: 1050px;
     min-height: 500px;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding-bottom: 100px; /* временная высота */
-    background-size: auto 21px;
+    padding-bottom: 145px;
+    background-size: auto 20px;
   }
 
   .page-footer__title {
     width: 280px;
 
     @include zero;
-    padding-top: 150px;
-    padding-left: 160px;
-    font-size: 48px;
+    padding-top: 165px;
+    padding-left: 165px;
+    font-size: 53px;
 
     &::after {
       display: none;
@@ -234,9 +234,9 @@
 
   .page-footer__mail {
     @include zero;
-    padding-top: 45px;
-    padding-left: 160px;
-    font-size: 16px;
+    padding-top: 50px;
+    padding-left: 175px;
+    font-size: 17px;
   }
 
   .page-footer__adress {
@@ -244,22 +244,21 @@
     min-height: 110px;
 
     @include zero;
-    padding-top: 30px;
-    margin-left: 160px;
+    padding-top: 40px;
+    margin-left: 175px;
   }
 
   .page-footer__mail-value {
-    padding-bottom: 3px;
-    border-bottom: 2px solid $primary-color;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $primary-color;
   }
 
   .page-footer__adress-value {
     width: 230px;
     min-height: 35px;
-    margin-left: 22px;
-    padding-top: 2px;
+    margin-left: 25px;
     font-size: 16px;
-    line-height: 27px;
+    line-height: 30px;
   }
 
   .page-footer__map-block {
@@ -268,12 +267,12 @@
     height: 420px;
 
     @include zero;
-    margin-top: -425px;
-    margin-left: 485px;
+    margin-top: -460px;
+    margin-left: 525px;
   }
 
   .page-footer__map {
-    height: 420px;
+    height: 455px;
   }
 
   .page-footer__map-pin {
@@ -281,11 +280,11 @@
   }
 
   .page-footer__btn {
-    width: 210px;
-    margin-top: 45px;
-    margin-left: 160px;
+    width: 225px;
+    margin-top: 60px;
+    margin-left: 175px;
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .page-footer__socials-wrapper {
@@ -293,9 +292,5 @@
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 25px;
-  }
-
-  .page-footer__logo {
-    margin-left: 40px;
   }
 }

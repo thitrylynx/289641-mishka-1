@@ -142,7 +142,7 @@
     width: 1050px;
     min-height: 430px; /* временная высота */
     margin-top: 15px;
-    margin-left: 85px;
+    margin-left: 100px;
     padding-bottom: 90px;
     background-position: top left;
     background-size: 350px auto;
@@ -163,10 +163,10 @@
   .reviews__item-text {
     @include zero;
     margin-left: 175px;
-    margin-right: 15px;
+    margin-right: 80px;
     padding-top: 8px;
     font-size: 17px;
-    line-height: 29px;
+    line-height: 30px;
   }
 
   .reviews__author-name {
