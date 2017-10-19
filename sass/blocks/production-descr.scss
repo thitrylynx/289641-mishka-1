@@ -127,12 +127,13 @@
 @media (min-width: $desktop-widths) {
   .production-descr {
     flex-direction: row;
-    width: 965px;
-    height: 415px;
-    margin-top: 50px;
-    margin-left: 90px;
-    margin-bottom: 35px;
+    width: 1040px;
+    height: 450px;
+    margin-top: 25px;
+    margin-left: 55px;
+    margin-bottom: 45px;
     padding: 0;
+    border: 1px solid $border-color;
   }
 
   .production-descr:hover .production-descr__inner {
@@ -144,12 +145,12 @@
 
     @include zero;
     align-self: flex-start;
-    padding-top: 90px;
-    padding-left: 70px;
+    padding-top: 95px;
+    padding-left: 80px;
   }
 
   .production-descr__title {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .production-descr__title-pic {
@@ -164,43 +165,44 @@
 
   .production-descr__video {
     @include zero;
-    width: 630px;
-    height: 415px;
+    width: 675px;
+    height: 450px;
   }
 
   .production-descr__video-icon {
-    margin-top: 170px;
-    margin-left: -365px;
+    margin-top: 190px;
+    margin-left: -385px;
   }
 
   .production-descr__video-icon:hover {
-    margin-top: 161px;
-    margin-left: -373px;
+    margin-top: 181px;
+    margin-left: -396px;
   }
 
   .production-descr__video-icon:active {
-    margin-top: 175px;
-    margin-left: -378px;
+    margin-top: 195px;
+    margin-left: -395px;
   }
 
   .production-descr__inner {
     align-self: flex-start;
 
     @include zero;
-    width: 305px;
-    margin-left: -240px;
-    padding-top: 125px;
+    width: 330px;
+    height: 310px;
+    margin-left: -245px;
+    padding-top: 140px;
     padding-left: 31px;
-    padding-bottom: 52px;
   }
 
   .production-descr__text {
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .production-descr__btn {
-    margin-top: 40px;
-    font-size: 16px;
+    width: 230px;
+    margin-top: 50px;
+    font-size: 17px;
   }
 }

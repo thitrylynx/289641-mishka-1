@@ -56,18 +56,18 @@
 
 @media (min-width: $desktop-widths) {
   .catalog-page__header {
-    height: 230px;
+    height: 260px;
     margin-top: -55px;
 
     &::after {
-      margin-top: 50px;
-      background-size: auto 30px;
+      margin-top: 55px;
+      background-size: auto 31px;
     }
   }
 
   .catalog-page__title {
-    padding-top: 80px;
-    font-size: 48px;
+    padding-top: 90px;
+    font-size: 52px;
   }
 
   .catalog-page__wrapper {
