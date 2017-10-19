@@ -40,17 +40,17 @@
 
 @media (min-width: $desktop-widths) {
   .page-form__header {
-    height: 230px;
+    height: 260px;
     margin-top: -55px;
 
     &::after {
-      margin-top: 45px;
-      background-size: auto 30px;
+      margin-top: 55px;
+      background-size: auto 31px;
     }
   }
 
   .page-form__title {
-    padding-top: 85px;
-    font-size: 48px;
+    padding-top: 92px;
+    font-size: 52px;
   }
 }
